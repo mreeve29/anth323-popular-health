@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <title>ANTH323 Popular Health - Michael Reeve</title>
+        <link rel="stylesheet" href="splide_js/css/splide.min.css" />
+        <script type="text/javascript" src="splide_js/js/splide.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <style>
+            @media only screen and (max-width: 768px) {
+                /* For mobile phones: */
+                main {
+                    width: 100% !important;
+                    padding: 0 !important;
+                }
+                body {
+                    background-color: white !important;
+                    padding: 2;
+                }
+                .splide {
+                    min-height: 200px !important;
+                    max-height: 300px !important;
+                    height: 27% !important;
+                    margin: 0 auto;
+                    min-width: 300px !important;
+                    max-width: 650px !important;
+                    width: 90% !important;
+                }
+            }
+            img {
+                max-height: 325px;
+                display: block;
+            }
+            main {
+                width: 600px;
+                margin: 0 auto;
+                background-color: white;
+                padding: 3 20;
+                border-radius: 3px;
+            }
+            .splide {
+                height: 325px;
+            }
+            body {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background-color: rgb(234, 234, 234);
+                margin: 0;
+            }
+            p {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Why Vaccination Rate Matters</h1>
+            <h4>ANTH323 Public Health Project - Michael Reeve (0105)</h4>
+            <div class="content">
+                <p>
+                    In the following examples, click the arrows or swipe through the images to see how a virus with an
+                    R0 ~2-3 infects a population
+                </p>
+                <p>
+                    Consider the following population where each member is colored gray, representing an uninfected and
+                    non-vaccinated patient
+                </p>
+                <section class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <img class="splide__slide" src="anth_pics/0001.jpg" />
+                            <img class="splide__slide" src="anth_pics/0002.jpg" />
+                            <img class="splide__slide" src="anth_pics/0003.jpg" />
+                            <img class="splide__slide" src="anth_pics/0004.jpg" />
+                            <img class="splide__slide" src="anth_pics/0005.jpg" />
+                            <img class="splide__slide" src="anth_pics/0006.jpg" />
+                        </ul>
+                    </div>
+                </section>
+
+                <br />
+                <p>
+                    Now imagine ~75% of the population were vaccinated (blue) against the red strain of the virus. See
+                    how the virus spreads now:
+                </p>
+                <section class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <img class="splide__slide" src="anth_pics/0007.jpg" />
+                            <img class="splide__slide" src="anth_pics/0008.jpg" />
+                            <img class="splide__slide" src="anth_pics/0009.jpg" />
+                            <img class="splide__slide" src="anth_pics/0010.jpg" />
+                        </ul>
+                    </div>
+                </section>
+                <p>
+                    High vaccination rates provide a 'wall' of immunity to those who are not vaccinated, note how some
+                    unvaccinated members remain uninfected
+                </p>
+                <br />
+                <br />
+                <p>
+                    Now let's create a population with a ~99% vaccination rate, all but one member is vaccinated against
+                    the red strain.
+                </p>
+                <section class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <img class="splide__slide" src="anth_pics/0011.jpg" />
+                            <img class="splide__slide" src="anth_pics/0012.jpg" />
+                            <img class="splide__slide" src="anth_pics/0013.jpg" />
+                            <img class="splide__slide" src="anth_pics/0014.jpg" />
+                            <img class="splide__slide" src="anth_pics/0015.jpg" />
+                            <img class="splide__slide" src="anth_pics/0016.jpg" />
+                            <img class="splide__slide" src="anth_pics/0017.jpg" />
+                            <img class="splide__slide" src="anth_pics/0018.jpg" />
+                        </ul>
+                    </div>
+                </section>
+                <p>
+                    What happened? The only unvaccinated member contracted the original strain of the virus and then the
+                    virus mutated into a more contagious and immune-evasive version (now in green). The prior
+                    vaccination is not effective at preventing green-strain infection. As a result, all members are
+                    infected regardless of their vaccination status, similar to the first scenario.
+                </p>
+                <br />
+                <br />
+                <p>
+                    This is a small scale example, however it highlights the importance of high vaccination rates. All
+                    it takes is one person to cause a virus to mutate into one that can avoid prior immunity.
+                </p>
+                <p>
+                    We have seen this outcome throughout the COVID-19 pandemic. The Omicron variant was discovered after
+                    vaccines had become mainstream. If everyone in the world was vaccinated, COVID-19 would have had a
+                    much smaller chance to mutate into something like Omicron.
+                </p>
+                <p>
+                    Vaccine distribution is not equal across the globe, however. Not only do wealthy nations need to
+                    distribute vaccines to lower-income regions but they also need to educate those populations on the
+                    importance of vaccinations.
+                </p>
+                <p>
+                    If you live in the United States you are lucky enough to have free, uncontested access to most
+                    mainstream vaccines, including COVID-19 vaccines. Do your part and get vaccinated, as well as the
+                    updated Bivalent booster which targets Omicron variants of COVID-19.
+                </p>
+                <p>Find a vaccination site at <a href="https://www.vaccines.gov/">vaccines.gov</a></p>
+            </div>
+        </main>
+        <script>
+            //code from: https://splidejs.com
+            var elms = document.getElementsByClassName("splide");
+            for (var i = 0; i < elms.length; i++) {
+                var splide = new Splide(elms[i], {
+                    type: "fade",
+                    rewind: false,
+                });
+
+                splide.mount();
+            }
+        </script>
+    </body>
+</html>
