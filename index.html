@@ -25,6 +25,9 @@
                     width: 90% !important;
                 }
             }
+            #nyt-img {
+                width: 100%;
+            }
             img {
                 max-height: 325px;
                 display: block;
@@ -47,6 +50,15 @@
             p {
                 text-align: center;
             }
+            .content {
+                padding-bottom: 40px;
+            }
+            hr {
+                height: 1px;
+                border-width: 0;
+                /* color: gray; */
+                background-color: rgba(128, 128, 128, 0.274);
+            }
         </style>
     </head>
     <body>
@@ -55,7 +67,7 @@
             <h4>ANTH323 Public Health Project - Michael Reeve (0105)</h4>
             <div class="content">
                 <p>
-                    In the following examples, click the arrows or swipe through the images to see how a virus with an
+                    In the following scenarios, click the arrows or swipe through the images to see how a virus with an
                     R0 ~2-3 infects a population
                 </p>
                 <p>
@@ -74,8 +86,7 @@
                         </ul>
                     </div>
                 </section>
-
-                <br />
+                <hr />
                 <p>
                     Now imagine ~75% of the population were vaccinated (blue) against the red strain of the virus. See
                     how the virus spreads now:
@@ -94,8 +105,7 @@
                     High vaccination rates provide a 'wall' of immunity to those who are not vaccinated, note how some
                     unvaccinated members remain uninfected
                 </p>
-                <br />
-                <br />
+                <hr />
                 <p>
                     Now let's create a population with a ~99% vaccination rate, all but one member is vaccinated against
                     the red strain.
@@ -120,8 +130,17 @@
                     vaccination is not effective at preventing green-strain infection. As a result, all members are
                     infected regardless of their vaccination status, similar to the first scenario.
                 </p>
-                <br />
-                <br />
+                <hr />
+
+                <p>
+                    The individualistic mindset to not get vaccinated cost the population's herd immunity. The promotion
+                    of vaccination and prevention measures from governments is often inconsistent, leading the community
+                    to lose trust and rely on political figures for their information. Elected officials want to retain
+                    their office and preserve approval ratings from their community. This creates a dynamic where a
+                    virus and vaccines become political, and where individuals make blunt decisions, disregarding the
+                    health of the general public.
+                </p>
+
                 <p>
                     This is a small scale example, however it highlights the importance of high vaccination rates. All
                     it takes is one person to cause a virus to mutate into one that can avoid prior immunity.
@@ -132,16 +151,48 @@
                     much smaller chance to mutate into something like Omicron.
                 </p>
                 <p>
-                    Vaccine distribution is not equal across the globe, however. Not only do wealthy nations need to
-                    distribute vaccines to lower-income regions but they also need to educate those populations on the
-                    importance of vaccinations.
+                    Vaccine distribution is not equal across the globe, however. Wealthier countries are better equipped
+                    to handle new waves of COVID-19 because of their relatively high vaccination rates. In contrast,
+                    in-development countries have less access to vaccines because of costs.
+                </p>
+                <img id="nyt-img" src="anth_pics/nyt.png" />
+                <p>
+                    Not only do wealthy nations need to distribute vaccines to lower-income regions but they also need
+                    to educate those populations on the importance of vaccinations.
                 </p>
                 <p>
                     If you live in the United States you are lucky enough to have free, uncontested access to most
-                    mainstream vaccines, including COVID-19 vaccines. Do your part and get vaccinated, as well as the
-                    updated Bivalent booster which targets Omicron variants of COVID-19.
+                    mainstream vaccines, including COVID-19 vaccines. Do your part and get vaccinated, as well as
+                    receive the updated Bivalent booster which targets Omicron variants of COVID-19.
                 </p>
                 <p>Find a vaccination site at <a href="https://www.vaccines.gov/">vaccines.gov</a></p>
+                <hr />
+                <div>
+                    <h4>Sources From Class:</h4>
+                    <a href="https://open.spotify.com/episode/4ejqVCkbOkdRiiGZ6jXmPX?si=sw3QEgJfT_SqDz11wzvAeg&nd=1"
+                        >Vaccine Infodemiology (COVID 19 Immunity) with Jessica Malaty Riveram</a
+                    >
+                    <br />
+                    <br />
+                    <a
+                        href="https://knowledge.wharton.upenn.edu/article/politics-pandemics-countries-respond-better-others/"
+                    >
+                        The Politics of Pandemics: Why Some Countries Respond Better Than Others
+                    </a>
+                    <br />
+                    <br />
+                    <a href="https://www.sapiens.org/culture/vaccines-anthropology/"> What Makes Vaccines Social? </a>
+                    <br />
+                    <br />
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6198692/?report=classic"
+                        >Social capital, trust in health information, and acceptance of Measles-Rubella vaccination
+                        campaign in Tamil Nadu: A case-control study</a
+                    >
+                    <h4>Outside Sources:</h4>
+                    <a href="https://www.nytimes.com/interactive/2021/world/covid-vaccinations-tracker.html">
+                        Tracking Coronavirus Vaccinations Around the World
+                    </a>
+                </div>
             </div>
         </main>
         <script>
